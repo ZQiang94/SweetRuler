@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.zhzh.sample.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最小值:" />
+
+        <EditText
+            android:id="@+id/min"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="500" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最大值:" />
+
+        <EditText
+            android:id="@+id/max"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="8000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="间隔距离(dp):" />
+
+        <EditText
+            android:id="@+id/perWidth"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="10" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每个刻度代表的值:" />
+
+        <EditText
+            android:id="@+id/spacingValue"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="10" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长刻度间隔刻度值:" />
+
+        <EditText
+            android:id="@+id/longSpacingValue"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="10" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FF6563"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    <zqiang94.github.io.ruler.view.RulerView
+        android:id="@+id/rulerView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:lineColor="@android:color/darker_gray"
+        app:lineWidth="1dp"
+        app:longHeight="16dp"
+        app:longSpacingValue="20"
+        app:maxValue="100"
+        app:middleHeight="20dp"
+        app:middleLineColor="@android:color/holo_red_light"
+        app:middleLineWidth="1dp"
+        app:minValue="0"
+        app:perWidth="10dp"
+        app:shortHeight="10dp"
+        app:showBaseLine="false"
+        app:spacingValue="5"
+        app:textMargin="16dp"
+        app:textSize="18sp" />
+
+</LinearLayout>

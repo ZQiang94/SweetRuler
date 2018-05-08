@@ -52,3 +52,5 @@
     //是否显示底线
     private boolean showBaseLine;
 ```
+<img width="270" height="480" src="/art/device-2018-05-08-144004.png"/>
+<img width="270" height="480" src="/art/device-2018-05-08-144040.png"/>
